@@ -1,60 +1,32 @@
-}
- 
-main aside .social-media li a:hover {
-  color: #F2E5BF;
-}
- 
-#textContainer {
-  max-width: 500px;
-  margin: auto;
-}
-#textContainer h2 {
-  margin-bottom: 10px; /* Beri sedikit jarak antara judul dan isi */
-}
 
-#textContainer.collapsed #text {
-  overflow: hidden;
-  display: -webkit-box;
-    -webkit-line-clamp: 5; /* Menampilkan minimal 5 baris */
-    -webkit-box-orient: vertical;
-}
-#content.expanded #text {
-  display: block;
-}
-#textContainer.expanded #text {
-  white-space: normal;
-  height: auto;
-}
+  #content {
+    float: left;
+    width: 75%;
+  }
+  
+  aside {
+    float: right;
+    width: 25%;
+  
+    padding-left: 20px;
+  }
+  
+  header {
+    display: inline;
+  }
 
-/* Medium devices (768px dan di bawahnya) */
-@media screen and (max-width: 768px) {
-  header.navbar-container {
-    flex-direction: column;
-  }
- 
-  header.navbar-container .nav-list ul {
-    flex-wrap: wrap;
-    column-gap: 0.5rem;
-  }
- 
-  main {
-    padding: 1rem 3rem;
-  }
- 
-  main .content {
-    flex-direction: column;
-    gap: 2rem;
-  }
- 
-  main .content .content-description .title {
-    font-size: 3rem;
-  }
- 
-  main .content .content-description p {
-    font-size: 1rem;
-  }
- 
-  main .content .content-image {
-    order: -1;
-  }
+
+
+article li {
+  list-style: none;
+  display: inline;
+  margin: 0.5rem;
 }
+  
+  @media screen and (max-width: 1000px) {
+    #content,
+    aside {
+      width: 100%;
+      padding: 0;
+    }
+  }
